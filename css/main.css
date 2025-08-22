@@ -1626,6 +1626,10 @@ img {
         width: 100%;
     }
 
+    .secondTopPublicsDiv .publicItem {
+        padding-left: 20px;
+    }
+
     .secondPartNav .thirdPagePart {
         display: none;
     }
