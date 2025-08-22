@@ -786,6 +786,10 @@ img {
     display: none;
 }
 
+.allNewsBigDiv .newsItem.appearedInMobile {
+    display: none;
+}
+
 .allNewsBigDiv .newsInPressfeed {
     width: 100%;
     height: 311px;
@@ -1174,6 +1178,64 @@ img {
     flex-direction: column;
     gap: 20px;
     z-index: 3;
+}
+
+.lastMobileSliderSpan {
+    width: 100%;
+    background: white;
+    padding: 10px;
+    margin-top: 20px;
+    display: none;
+}
+
+.lastMobileSliderSpan h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.lastMobileSliderSpan .firstPartMainImg {
+    width: 100%;
+    height: 367px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.lastMobileSliderSpan .sliderBottomDiv {
+    width: 100%;
+    height: 68.83px;
+    position: relative;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    cursor: grab;
+}
+
+.lastMobileSliderSpan .sliderBottomDiv::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/left-arrow.png) no-repeat;
+    cursor: pointer;
+}
+
+.lastMobileSliderSpan .sliderBottomDiv::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/right-arrow.png) no-repeat;
 }
 
 /* _______________________________________________ */
@@ -1652,6 +1714,30 @@ img {
 
     .secondPagePart .bottomEmailPartDiv {
         display: none;
+    }
+
+    .allNewsBigDiv .newsItem.disappearedInMobile {
+        display: none;
+    }
+
+        .allNewsBigDiv .newsItem.appearedInMobile {
+            display: block;
+        }
+    
+    .allNewsBigDiv .bigSliderNewsPart {
+        display:  none;
+    }
+
+    .lastMobileSliderSpan {
+        width: 100%;
+        height: 506px;
+        display: block;
+        padding: 25px;
+    }
+
+    .lastMobileSliderSpan .sliderBottomDiv img{
+        width: 48px;
+        height: 69px;
     }
 
 }
