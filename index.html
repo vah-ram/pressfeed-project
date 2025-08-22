@@ -64,6 +64,12 @@
 
         <header class="topHeaderMenu">
 
+            <div class="menuburgerDiv">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <h1 class="titlePressfeed">
                 pressfeed.<p>журнал</p>
             </h1>
@@ -85,6 +91,10 @@
 
             <button class="headerPublicBtn">
                 Опубликовать статью
+            </button>
+
+            <button class="searchBtn">
+                <img src="./img/big-search-icon.png" alt="">
             </button>
 
             <button class="myAccountBtn">
@@ -125,11 +135,11 @@
                     <p>Подкасты</p>
                 </li>
 
-                <li>
+                <li class="isHidden">
                     <p>SMM</p>
                 </li>
 
-                <li>
+                <li class="isHidden">
                     <p>Что пишут</p>
                 </li>
 
@@ -137,19 +147,19 @@
                     <p>Медиа</p>
                 </li>
 
-                <li>
+                <li class="isHidden">
                     <p>Контент-маркетинг</p>
                 </li>
 
-                <li>
+                <li class="isHidden">
                     <p>Кейсы</p>
                 </li>
 
-                <li>
+                <li class="isHidden">
                     <p>Аналитика</p>
                 </li>
 
-                <li>
+                <li class="isHidden">
                     <p>Что пишут</p>
                 </li>
             </ul>
@@ -326,9 +336,20 @@
                             </h2>
                         </div>
                     </span>
+
+                    <div class="publicStaticNewsPartDiv">
+                        <p>
+                            У вас есть чем поделиться с читателями Pressfeed?
+                        </p>
+
+                        <button>
+                            Опубликовать статью
+                        </button>
+                    </div>
                 </div>
 
                 <div class="allNewsBigDiv">
+
                     <div class="newsItem">
                         <span class="topDataSpan">
                             <p>03 ноября 2019</p>
@@ -399,6 +420,41 @@
                         </p>
                     </div>
 
+                    <span class="newsInPressfeed">
+                        <h2>Новое на Pressfeed</h2>
+
+                        <p>
+                            Книга «Как бесплатно продвигать
+                            бизнес с помощью СМИ». 
+                            Практическое <br> руководство от
+                            Pressfeed
+                        </p>
+
+                        <p>
+                            С чистого листа: как Pressfeed 
+                            помогает родиться большому 
+                            тексту
+                        </p>
+
+                        <p>
+                            Пока ты спал. 7 аргументов, чтобы 
+                            перейти с базового тарифа 
+                            Pressfeed на тариф <br> «Эксперт»
+                        </p>
+
+                        <p>
+                            С чистого листа: как Pressfeed 
+                            помогает родиться большому 
+                            тексту
+                        </p>
+
+                        <p>
+                            Как Pressfeed помогает 
+                            журналистам в поиске экспертов и 
+                            увеличивает <br> производительность
+                        </p>
+                    </span>
+
                     <div class="newsItem">
                         <span class="topDataSpan">
                             <p>03 ноября 2019</p>
@@ -433,6 +489,269 @@
                               Stories, продавать через YouTube-блогеров.
                         </p>
                     </div>
+
+                    <div class="newsItem isHiddened">
+                        <span class="topDataSpan">
+                            <p>03 ноября 2019</p>
+
+                            <div>
+                                <span>
+                                    <img src="./img/comment.png">
+                                        <p>8</p>
+                                </span>
+
+                                <span>
+                                    <img src="./img/eye-icon.png">
+                                        <p>127</p>
+                                </span>
+                            </div>
+
+                            <button>
+                                ЧТО ПИШУТ
+                            </button>
+                        </span>
+
+                        <h2>
+                            Примеры пресс-релиза. <br>
+                            Как написать цепляющий пресс-релиз
+                        </h2>
+                        
+                        <p class="newsBottomText">
+                            Причем такой, чтобы был доступен всем членам команды, а система, в <br>
+                             которой он ведется, помогала следить, кто над чем работает и на каком <br>
+                              этапе находится.
+                        </p>
+                    </div>
+
+                    <span class="publicStaticCompanyPartDiv">
+                        <p>
+                            Как получить публикацию 
+                            о компании бесплатно
+                        </p>
+
+                        <button>
+                            Дать комментарий СМИ
+                        </button>
+                    </span>
+
+                    <div class="newsItem isHiddened">
+                        <span class="topDataSpan">
+                            <p>03 ноября 2019</p>
+
+                            <div>
+                                <span>
+                                    <img src="./img/comment.png">
+                                        <p>8</p>
+                                </span>
+
+                                <span>
+                                    <img src="./img/eye-icon.png">
+                                        <p>127</p>
+                                </span>
+                            </div>
+
+                            <button>
+                                ЧТО ПИШУТ
+                            </button>
+                        </span>
+
+                        <h2>
+                            Топ-20 бесплатных фотостоков для всех, <br>
+                            кто работает с контентом
+                        </h2>
+                        
+                        <p class="newsBottomText">
+                            Признаться, мир бесплатных сервисов пока не придумал инструмента <br>
+                             более доступного, универсального и понятного, чем Google Docs. <br>
+                              Например проводила компания Curata, из 20 самых популярных
+                        </p>
+                    </div>
+
+                     <div class="newsItem isHiddened">
+                        <span class="topDataSpan">
+                            <p>03 ноября 2019</p>
+
+                            <div>
+                                <span>
+                                    <img src="./img/comment.png">
+                                        <p>8</p>
+                                </span>
+
+                                <span>
+                                    <img src="./img/eye-icon.png">
+                                        <p>127</p>
+                                </span>
+                            </div>
+
+                            <button>
+                                ЧТО ПИШУТ
+                            </button>
+                        </span>
+
+                        <h2>
+                            Как пиарщики тратят время, бюджеты, какие <br>
+                             проблемы решают и чего боятся
+                        </h2>
+
+                        <img 
+                            src="./img/first-news-office.jpg" 
+                            class="news-img">
+                        
+                        <p class="newsBottomText">
+                            Как получить бесплатный PR вашего бизнеса, как продвигаться в СМИ и <br>
+                             нужно ли вам это, как писать письма своей аудитории, викторины в <br>
+                              Stories, продавать через YouTube-блогеров.
+                        </p>
+                    </div>
+
+                    <div class="bigSliderNewsPart">
+                        <h2>
+                            Сделано с pressfeed
+                        </h2>
+
+                        <span class="sliderImages">
+                            <img src="./img/left-arrow.png" alt="">
+                            <img src="./img/slider1.png" alt="">
+                            <img src="./img/slider2.png" alt="">
+                            <img src="./img/slider1.png" alt="">
+                            <img src="./img/slider3.png" alt="">
+                            <img src="./img/slider2.png" alt="">
+                            <img src="./img/right-arrow.png" alt="">
+                        </span>
+                    </div>
+
+                    <div class="newsItem isHiddened">
+                        <span class="topDataSpan">
+                            <p>03 ноября 2019</p>
+
+                            <div>
+                                <span>
+                                    <img src="./img/comment.png">
+                                        <p>8</p>
+                                </span>
+
+                                <span>
+                                    <img src="./img/eye-icon.png">
+                                        <p>127</p>
+                                </span>
+                            </div>
+
+                            <button>
+                                ЧТО ПИШУТ
+                            </button>
+                        </span>
+
+                        <h2>
+                            Как пиарщики тратят время, бюджеты, какие <br>
+                             проблемы решают и чего боятся
+                        </h2>
+
+                        <img 
+                            src="./img/first-news-office.jpg" 
+                            class="news-img">
+                        
+                        <p class="newsBottomText">
+                            Как получить бесплатный PR вашего бизнеса, как продвигаться в СМИ и <br>
+                             нужно ли вам это, как писать письма своей аудитории, викторины в <br>
+                              Stories, продавать через YouTube-блогеров.
+                        </p>
+                    </div>
+
+                    <div class="newsItem isHiddened">
+                        <span class="topDataSpan">
+                            <p>03 ноября 2019</p>
+
+                            <div>
+                                <span>
+                                    <img src="./img/comment.png">
+                                        <p>8</p>
+                                </span>
+
+                                <span>
+                                    <img src="./img/eye-icon.png">
+                                        <p>127</p>
+                                </span>
+                            </div>
+
+                            <button>
+                                ЧТО ПИШУТ
+                            </button>
+                        </span>
+
+                        <h2>
+                            Как составить контент-план. Программы, <br>
+                             шаблоны, выбор тем и полезные материалы
+                        </h2>
+                        
+                        <p class="newsBottomText">
+                            Как показывает опыт, в контент-редакторы люди обычно попадают <br>
+                            случайно. Это вам не профессия космонавта, о которой мечтаешь с <br>
+                             третьего класса. 
+                        </p>
+                    </div>
+
+                    <span class="bottomPopularTextSpan">
+                        <h2>САМОЕ ПОПУЛЯРНОЕ</h2>
+
+                        <p>
+                            18 лучших ресурсов для 
+                            бесплатного размещения статей
+                        </p>
+
+                        <p>
+                            Как пугают бренды. 10 самых 
+                            классных  кампаний к Хэллоуину
+                        </p>
+
+                        <p>
+                            Топ-20 бесплатных фотостоков 
+                            для всех, кто работает с контентом
+                        </p>
+
+                        <p>
+                            10 лучших интервью с известными 
+                            людьми нашей страны
+                        </p>
+
+                        <p>
+                            Примеры пресс-релиза. Как 
+                            написать яркий пресс-релиз
+                        </p>
+                    </span>
+
+                    <div class="newsItem isHiddened">
+                        <span class="topDataSpan">
+                            <p>03 ноября 2019</p>
+
+                            <div>
+                                <span>
+                                    <img src="./img/comment.png">
+                                        <p>8</p>
+                                </span>
+
+                                <span>
+                                    <img src="./img/eye-icon.png">
+                                        <p>127</p>
+                                </span>
+                            </div>
+
+                            <button>
+                                ЧТО ПИШУТ
+                            </button>
+                        </span>
+
+                        <h2>
+                            Топ-20 бесплатных фотостоков для всех, <br>
+                            кто работает с контентом
+                        </h2>
+                        
+                        <p class="newsBottomText">
+                            Признаться, мир бесплатных сервисов пока не придумал инструмента <br>
+                             более доступного, универсального и понятного, чем Google Docs. <br>
+                              Например проводила компания Curata, из 20 самых популярных
+                        </p>
+                    </div>
+
                 </div>
 
                 <span class="bottomTitleCenter">
@@ -461,6 +780,83 @@
                             <button>Подписаться</button>
                     </span>
                 </div>
+
+                 <span class="lastMobileBusinnesSpan">
+                    <p>
+                        Получить материалы, <br>
+                         которые помогут вам 
+                    </p>
+
+                    <h2>
+                        продвигать бизнес <br>
+                         в СМИ бесплатно
+                    </h2>
+
+                    <span>
+                        <input 
+                            type="email" 
+                            placeholder="E-mail"
+                            maxlength="30"
+                            required>
+
+                            <button>Да, я хочу получить</button>
+                    </span>
+                </span>
+
+                <div class="bottomLinksPartDiv isHidden">
+                    <span class="firstSpan">
+                        <p>© Журнал Pressfeed. 2015-2019</p>
+                        <span>
+                            <a>Карта сайта</a>
+                            <a>Контакты</a>
+                        </span>
+                    </span>
+
+                    <p class="bottomCenterText">
+                        Следите за миром медиа и пиара <br>
+                        в каналах и группах Pressfeed
+                    </p>
+
+                    <span class="bottomIconsSpan">
+                        <img src="./img/telegram-icon-bottom.png" alt="">
+                        <img src="./img/facebook-icon-bottom.png" alt="">
+                        <img src="./img/vkontakte-icon-bottom.png" alt="">
+                        <img src="./img/dzen-icon-bottom.png" alt="">
+                    </span>
+                </div>
+
+                <div class="getMaterialsLastDiv">
+                    <p>
+                        Получить материалы, которые помогут вам <br>
+                        продвигать бизнес в СМИ бесплатно
+                    </p>
+
+                    <span>
+                        <div>
+                            <input 
+                                type="email" 
+                                placeholder="E-mail"
+                                maxlength="30"
+                                required>
+                        </div>
+
+                        <button>
+                            Да, я хочу получить
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="commentOpenBarDiv">
+
+                <img 
+                    src="./img/comment-left-arrow.png" 
+                    class="leftArrowComment">
+
+                <span>
+                        <img src="./img/comments-icon.png" alt="">
+                    Комментарии
+                </span>
             </div>
 
             <div class="thirdPagePart">
@@ -1202,5 +1598,7 @@
             </div>
         </nav>
     </main>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

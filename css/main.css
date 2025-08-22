@@ -160,6 +160,25 @@ img {
     position: relative;
 }
 
+.topHeaderMenu .menuburgerDiv {
+    width: 24px;
+    height: 24px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+
+.menuburgerDiv span {
+    width: 18px;
+    height: 0;
+    border: 1px solid white;
+    border-radius: 2px;
+}
 
 .topHeaderMenu .titlePressfeed {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -220,6 +239,17 @@ img {
     font-size: 14px;
     cursor: pointer;
     margin-left: 30px;
+}
+
+.topHeaderMenu .searchBtn {
+    width: 18px;
+    height: 18px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .topHeaderMenu .myAccountBtn {
@@ -296,8 +326,9 @@ img {
     width: 100%;
     display: flex;
     flex-direction: row;
-    background: #F6F6F6;
 }
+
+/* ________________________________ */
 
 .secondPartNav .firstPagePart {
     width: 20%;
@@ -508,6 +539,30 @@ img {
     flex-direction: column;
     text-align: left;
     padding-left: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.firstBottomBusinnesSpan::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 70px;
+    background: url('../img/businnes-container-before.png') center center / cover no-repeat;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.firstBottomBusinnesSpan::after {
+    content: '';
+    position: absolute;
+    width: 87px;
+    height: 132px;
+    background: url('../img/businnes-container-after.png') center center / cover no-repeat;
+    top: 100px;
+    right: 0;
+    z-index: 2;
 }
 
 .firstBottomBusinnesSpan p {
@@ -637,6 +692,82 @@ img {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.publicStaticNewsPartDiv {
+    width: 100%;
+    height: 108px;
+    background: #E7ECF6;
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #C2C7D1;
+}
+
+.publicStaticNewsPartDiv p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 125%;
+    margin-top: 20px;
+    color: black;
+}
+
+.publicStaticNewsPartDiv button {
+    width: 240px;
+    height: 36px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4054F9;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.publicStaticCompanyPartDiv {
+    width: 100%;
+    height: 108px;
+    background: #E7ECF6;
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #C2C7D1;
+}
+
+.publicStaticCompanyPartDiv p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 125%;
+    margin-top: 20px;
+    color: black;
+}
+
+.publicStaticCompanyPartDiv button {
+    width: 250px;
+    height: 36px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4054F9;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
 .allNewsBigDiv {
     width: 40vmax;
     display: flex;
@@ -651,8 +782,133 @@ img {
     padding-bottom: 20px;
 }
 
+.allNewsBigDiv .newsItem.isHiddened {
+    display: none;
+}
+
+.allNewsBigDiv .newsInPressfeed {
+    width: 100%;
+    height: 311px;
+    display: none;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 20px;
+    background: #E9F9F0;
+    gap: 20px;
+}
+
+.allNewsBigDiv .bigSliderNewsPart {
+    width: 100%;
+    height: 290px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E4E4E4;
+}
+
+.bigSliderNewsPart h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.allNewsBigDiv .bigSliderNewsPart .sliderImages {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderImages img {
+    width: 48px;
+    height: 69px;
+    cursor: pointer;
+}
+
+.sliderImages img:first-child {
+    width: 3px;
+    height: 8px;
+}
+
+.sliderImages img:nth-child(4) {
+    width: 140px;
+    height: 198px;
+}
+
+.sliderImages img:last-child {
+    width: 3px;
+    height: 8px;
+}
+
+
+.newsInPressfeed h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.newsInPressfeed p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+}
+
 .allNewsBigDiv .newsItem:last-child {
     border-bottom: none;
+}
+
+.allNewsBigDiv .bottomPopularTextSpan {
+    width: 100%;
+    height: 238px;
+    background: #F9EDE9;
+    display: none;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+    .bottomLinksPartDiv {
+        display: none;
+    }
+
+    .getMaterialsLastDiv {
+        display: none;
+    }
+
+.bottomPopularTextSpan h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 130%;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+}
+
+.bottomPopularTextSpan p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 121%;
+    letter-spacing: 0%;
+    position: relative;
+    margin-left: 20px;
+}
+
+.bottomPopularTextSpan p::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    width: 12px;
+    height: 12px;
+    background: url(../img/small-fire.png) center no-repeat;
 }
 
 .newsItem .topDataSpan {
@@ -830,7 +1086,97 @@ img {
     font-size: 16px;
 }
 
-/* ___________________________ */
+.lastMobileBusinnesSpan {
+    width: 100%;
+    height: 315px;
+    background: linear-gradient(27.84deg, #4054F9 3.87%, #7040F9 94.97%);
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.lastMobileBusinnesSpan::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 70px;
+    background: url('../img/businnes-container-before.png') center center / cover no-repeat;
+    top: 20px;
+    left: 100px;
+    z-index: 2;
+}
+
+.lastMobileBusinnesSpan::after {
+    content: '';
+    position: absolute;
+    width: 87px;
+    height: 132px;
+    background: url('../img/businnes-container-after.png') center center / cover no-repeat;
+    top: 100px;
+    right: 0;
+    z-index: 2;
+}
+
+.lastMobileBusinnesSpan p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-top: 40px;
+    z-index: 3;
+}
+
+.lastMobileBusinnesSpan h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -3%;
+    color: white;
+    margin-top: 10px;
+    z-index: 3;
+}
+
+.lastMobileBusinnesSpan input {
+    width: 202px;
+    height: 40px;
+    border-radius: 4px;
+    background: white;
+    padding-left: 20px;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+    z-index: 3;
+}
+
+.lastMobileBusinnesSpan button {
+    width: 202px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #FBDB54;
+    font-family: Segoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.lastMobileBusinnesSpan span {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 3;
+}
+
+/* _______________________________________________ */
 
 .secondPartNav .thirdPagePart {
     width: 21%;
@@ -839,6 +1185,11 @@ img {
     background: transparent;
     margin-top: 20px;
     padding: 30px 0 0 35px;
+    transition: .2s ease;
+}
+
+.commentOpenBarDiv {
+    display: none;
 }
 
 .thirdPagePart .commentsTitle {
@@ -922,4 +1273,385 @@ img {
     font-size: 13px;
     text-decoration: none;
     color: #4054F9;
+}
+
+@media (max-width: 1024px) {
+    .topBarMainArticle {
+        display: none;
+    }
+
+    .topHeaderMenu .menuburgerDiv {
+        display: flex;
+    }
+
+    .topHeaderMenu .titlePressfeed {
+        display: none;
+    }
+
+    .topHeaderMenu .webLogosDiv {
+        display: none;
+    }
+
+    .topMenuItemsHeader ul li.isHidden {
+        display: none;
+    }
+
+    .secondPartNav {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .commentOpenBarDiv {
+        width: 55px;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        flex-direction: column;
+        background: #F6F6F6;
+        right: 0;
+        top: 50px;
+        cursor: pointer;
+        padding-top: 20px;
+    }
+
+    .commentOpenBarDiv span {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        position: absolute;
+        top: 120px;
+        transform: rotate(90deg);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+
+    .commentOpenBarDiv span img {
+        width: 16px;
+        height: 16px;
+        transform: rotate(-90deg);
+    }
+
+    .secondPartNav .thirdPagePart {
+        position: absolute;
+        right: -200px;
+        top: 30px;
+        background: #F6F6F6;
+    }
+
+    .secondPartNav .thirdPagePart.activated {
+        right: 0;
+    }
+
+    .secondPartNav .firstPagePart {
+        display: none;
+    }
+    
+    .secondPartNav .secondPagePart {
+        width: 90%;
+        height: 100%;
+    }
+
+    .secondPagePart .secondTopPublicsDiv {
+        width: 90%;
+    }
+    
+    .secondTopPublicsDiv .publicItem {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .allNewsBigDiv {
+        width: 90%;
+        margin-top: -5px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .newsItem .news-img {
+        width: 100%;
+    }
+
+    .newsItem h2 {
+        margin-top: 20px;
+    }
+
+    .publicStaticNewsPartDiv {
+        display: flex;
+    }
+
+    .allNewsBigDiv .newsInPressfeed {
+        display: flex;
+    }
+
+    .allNewsBigDiv .bigSliderNewsPart {
+        display: flex;
+    }
+
+    .allNewsBigDiv .bottomPopularTextSpan {
+        display: flex;
+    }
+
+    .publicStaticCompanyPartDiv {
+        display: flex;
+    }
+
+    .allNewsBigDiv .newsItem.isHiddened {
+        display: block;
+    }
+
+    .secondPagePart .bottomTitleCenter {
+        position: relative;
+        z-index: 100;
+        bottom: 0;
+        margin-top: 20px;
+    }
+
+    .secondPagePart .bottomEmailPartDiv {
+        width: 90%;
+        position: relative;
+        bottom: 0;
+        margin-top: 20px;
+    }
+
+     .bottomLinksPartDiv {
+        width: 105vw;
+        height: 111px;
+        background: #2A2D34;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        margin-top: 50px;
+        color: #FFFFFF;
+    }
+
+     .bottomLinksPartDiv .firstSpan{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+        
+    .bottomLinksPartDiv .firstSpan span {
+        display: flex;
+        gap: 30px;
+    }
+
+         .bottomLinksPartDiv .firstSpan p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            color: #A3A3A3;
+        }
+
+        .bottomLinksPartDiv span span a {
+            color: #F7E693;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 135%;
+        }
+    
+    .bottomLinksPartDiv .bottomCenterText {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .bottomLinksPartDiv .bottomIconsSpan {
+        display: flex;
+        gap: 10px;
+    }
+
+    .getMaterialsLastDiv {
+        width: 105vw;
+        height: 86px;
+        background: #141517;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .getMaterialsLastDiv p {
+        margin-left: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .getMaterialsLastDiv span {
+        display: flex;
+        gap: 10px;
+    }
+
+    .getMaterialsLastDiv span div {
+        width: 164px;
+        height: 34px;
+        border-radius: 4px;
+        background: #303030;
+        border: 1px solid #464646;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+        .getMaterialsLastDiv span div input {
+            width: 80%;
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+    
+            .getMaterialsLastDiv span button {
+                width: 164px;
+                height: 34px;
+                border: none;
+                border-radius: 4px;
+                background: #FBDB54;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                font-size: 13px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+}
+
+@media (max-width: 767px) {
+
+    .topHeaderMenu .headerInputDiv {
+        display: none;
+    }
+
+    .topHeaderMenu .headerPublicBtn {
+        display: none;
+    }
+
+    .topMenuItemsHeader {
+        display: none;
+    }
+
+    .topHeaderMenu .searchBtn {
+        display: flex;
+        position: absolute;
+        right: 90px;
+    }
+
+    .topHeaderMenu .myAccountBtn {
+        position: absolute;
+        right: -10px;
+    }
+
+        .secondPartNav .secondPagePart {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 0;
+        }
+    
+    .secondPagePart .secondTopPublicsDiv {
+        width: 100%;
+    }
+
+    .secondPartNav .thirdPagePart {
+        display: none;
+    }
+    
+    .commentOpenBarDiv {
+        display: none;
+    }
+    
+    .allNewsBigDiv {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .allNewsBigDiv .topDataSpan {
+        position: relative;
+        top: -25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .newsItem h2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .newsItem .newsBottomText {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
+    .topDataSpan div {
+        position: absolute;
+        right: 20px;
+    }
+
+    .topDataSpan button {
+        top: 30px;
+        left: 20px;
+    }
+
+    .allNewsBigDiv .newsInPressfeed {
+        padding-left: 10px;
+        height: 400px;
+    }
+
+    .allNewsBigDiv .bottomPopularTextSpan {
+        height: 326px;
+        padding-left: 10px;
+    }
+
+    .bottomLinksPartDiv {
+        height: 209px;
+        flex-direction: column;
+    }
+
+        .bottomLinksPartDiv .bottomIconsSpan {
+            margin-bottom: 20px;
+        }
+
+             .bottomLinksPartDiv .firstSpan{
+                margin-top: 20px;
+            }
+        
+    .secondPagePart .bottomTitleCenter {
+        transform: translate(0, 20px);
+    }
+        
+    .lastMobileBusinnesSpan {
+        display: flex;
+        align-items: center;
+        transform: translate(0, 50px);
+    }
+
+    .lastMobileBusinnesSpan span {
+        transform: translate(0, -20px);
+    }
+
+    .lastMobileBusinnesSpan p {
+        margin-left: -50px;
+    }
+
+    .getMaterialsLastDiv {
+        display: none;
+    }
+
+    .secondPagePart .bottomEmailPartDiv {
+        display: none;
+    }
+
 }
